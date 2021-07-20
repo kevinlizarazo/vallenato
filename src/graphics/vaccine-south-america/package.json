@@ -1,0 +1,13 @@
+{
+  "name": "vaccine-south-america",
+  "private": true,
+  "version": "1.0.0",
+  "description": "data visualization",
+  "main": "index.js",
+  "scripts": {
+    "convert": "node ../../../utils/ai2htmlconvert.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": ""
+}

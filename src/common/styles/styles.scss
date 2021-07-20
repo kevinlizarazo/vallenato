@@ -1,0 +1,485 @@
+/* http://vallenato-cfr.netlify.com/assets/css/tailwind.css */
+@tailwind preflight;
+@tailwind utilities;
+
+/*fixed width within paragraph vallenato*/
+.v-fixed {
+   width: 680px !important;
+}
+
+
+@media screen and (max-width: 1023px) and (min-width: 550px) {
+  .v-fixed {
+    width: 550px !important;
+  }
+}
+
+@media screen and (max-width: 549px) and (min-width: 360px) {
+  .v-fixed {
+    width: 360px !important;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .v-fixed {
+    width: 320px !important;
+  }
+}
+
+/*fixed with in paragraph backgrounder will have new sizes to follow until updated*/
+.v-fixed-bgr {
+  width: 600px !important;
+}
+
+
+@media screen and (max-width: 1023px) and (min-width: 520px) {
+ .v-fixed-bgr {
+   width: 520px !important;
+ }
+}
+
+@media screen and (max-width: 519px) and (min-width: 360px) {
+ .v-fixed-bgr {
+   width: 360px !important;
+ }
+}
+
+@media screen and (max-width: 359px) {
+ .v-fixed-bgr{
+   width: 320px !important;
+ }
+}
+
+img {
+  border-style: none !important;
+}
+
+.vallenato img {
+  border-style: none !important;
+}
+
+.vallenato .v-title {
+  @apply font-lm text-18 text-blue leading-22
+}
+
+.vallenato .v-subhead {
+  @apply font-l text-14 text-v-coolgray-2 leading-16 mt-5px
+}
+
+.vallenato .v-important{
+  @apply font-lm text-14 text-blue leading-16
+}
+
+.vallenato .v-annotation{
+  @apply font-l text-13 text-v-coolgray-2 leading-15
+}
+
+.vallenato .v-legend{
+  @apply font-l text-13 text-v-coolgray-2 leading-15
+}
+
+.vallenato .v-source {
+  @apply font-le text-10 text-gray-50 leading-12
+}
+
+.vallenato .v-axis {
+  @apply font-l text-13 text-v-coolgray-2 fill-v-coolgray-2 leading-15
+}
+
+.vallenato .v-link {
+  @apply text-orange-hl no-underline;
+}
+.vallenato .v{
+  margin: 0 auto;
+}
+
+.vallenato .src{
+ line-height: 12px;
+}
+
+.vallenato{
+  margin: 0 auto;
+  letter-spacing: 0px !important;
+  clear: right;
+}
+
+.vallenato a {
+  @apply text-orange-hl no-underline;
+}
+
+.vallenato .v-map-footer{
+  position: absolute !important;
+  bottom: 0 !important;
+}
+
+.vallenato .v-map-note{
+  position: absolute !important;
+  bottom: 45 !important;
+}
+
+.vallenato .v-text-country-nonfocal{
+  font-family: 'Arial';
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #c6c4c4;
+  line-height: 14.5px;
+}
+
+.vallenato .v-text-country-focal{
+  font-family: 'Arial';
+  font-size: 13px;
+  color: #412c26;
+  text-transform: uppercase;
+  line-height: 14.5px;
+}
+
+.vallenato .v-text-ocean{
+  font-family: 'Arial';
+  font-size: 13px;
+  color: #c6c4c4;
+  text-transform: uppercase;
+  line-height: 14.5px;
+}
+
+.vallenato .v-text-capital{
+  font-family: 'Arial';
+  font-size: 13px;
+  color: #412c26;
+}
+
+.vallenato .v-text-city-focal{
+  font-family: 'Arial';
+  font-size: 13px;
+  color: #412c26;
+}
+
+.vallenato .v-text-city-context{
+  font-family: 'Arial';
+  font-size: 13px;
+  color: #412c26;
+}
+
+/*-- CFR logo --*/
+.vallenato .v-logo-brown {
+  display: block;
+  width: 62px;
+  height: 30px;
+  background: url('./logo/CFR_Signature_Brown.svg');
+  background-size: 62px 30px;
+  position:absolute;
+  right:15px;
+  bottom:15px;
+}
+
+.vallenato .v-logo-w101 {
+  display: block;
+  width: 90px;
+  height: 24px;
+  background: url('./logo/World101_full.svg');
+  background-size: 90px 24px;
+  position:absolute;
+  right:15px;
+  bottom:15px;
+}
+
+.vallenato .v-logo-white {
+  display: block;
+  width: 62px;
+  height: 30px;
+  background: url('./logo/CFR_Signature_White.svg');
+  background-size: 62px 30px;
+  position:absolute;
+  right:15px;
+  bottom:15px;
+}
+
+.vallenato .v-logo-gray {
+  display: block;
+  width: 62px;
+  height: 30px;
+  background: url('./logo/CFR_Signature_Gray.svg');
+  background-size: 62px 30px;
+  position:absolute;
+  right:15px;
+  bottom:15px;
+}
+
+.vallenato .v-legend {
+  float: left;
+  height: 15px;
+  z-index: 2;
+}
+
+.vallenato .v-legend text {
+@apply text-v-coolgray-2;
+@apply font-l text-13
+}
+
+.vallenato .v-header{
+  @apply pl-15px pt-15px pr-15px mb-20px;
+  line-height: normal !important;
+  width:100%;
+}
+
+.vallenato .v-footer{
+  @apply relative pl-15px mt-20px;
+  float:left;
+  height: 45px;
+  width: 100%;
+}
+
+/*-- Chart --*/
+.vallenato .bb {
+  width: 100%
+}
+.vallenato .bb svg {
+}
+
+.bb path, .bb line {
+  fill: none;
+}
+
+.bb-button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  fill: #555;
+  font-size: 11px; }
+
+.bb-legend-item-title,
+.bb-xgrid-focus,
+.bb-ygrid,
+.bb-event-rect,
+.bb-bars path {
+  shape-rendering: crispEdges; }
+
+/*-- Axis --*/
+.bb-axis {
+  shape-rendering: crispEdges;
+  @apply font-l text-13 text-v-coolgray-2 fill-v-coolgray-2 leading-15
+}
+
+.bb-axis-y text, .vallenato .bb-axis-y2 text {
+@apply font-l text-13 text-v-coolgray-2 fill-v-coolgray-2 leading-15
+ }
+
+.bb-axis-x text, .vallenato .bb-axis-x2 text {
+@apply font-l text-13 text-v-coolgray-2 fill-v-coolgray-2 leading-15
+}
+
+.bb-event-rects {
+  fill-opacity: 1 !important; }
+  .bb-event-rects .bb-event-rect {
+    fill: transparent; }
+  .bb-event-rects .bb-event-rect._active_ {
+    fill: rgba(39, 201, 3, 0.05); }
+
+.tick._active_ text {
+  fill: #00c83c !important; }
+
+/*-- Grid --*/
+.bb-grid line {
+  stroke: #f1f1f1; }
+
+.bb-grid .bb-ygrid:last-child {
+  stroke: #e9e9e9; }
+
+.bb-xgrid-focus line {
+  stroke: #ddd; }
+
+/*-- Text on Chart --*/
+.bb-text.bb-empty {
+  fill: #767676; }
+
+/*-- Line --*/
+.bb-line {
+  stroke-width: 1px; }
+
+/*-- Point --*/
+
+rect.bb-circle._expanded_, use.bb-circle._expanded_ {
+  stroke-width: 1px; }
+
+/*-- Bar --*/
+.bb-bar {
+  stroke-width: 0; }
+  .bb-bar._expanded_ {
+    fill-opacity: 0.75; }
+
+/*-- Region --*/
+.bb-region {
+  fill: steelblue;
+  fill-opacity: 0.1; }
+  .bb-region.selected rect {
+    fill: #27c903; }
+
+/*-- Zoom region --*/
+.bb-zoom-brush {
+  fill-opacity: .1; }
+
+/*-- Brush --*/
+.bb-brush .extent {
+  fill-opacity: 0.1; }
+
+/*-- Select - Drag --*/
+/*-- Legend --*/
+.bb-legend-item-hidden {
+  opacity: 0.15; }
+
+.bb-legend-background {
+  opacity: 0.75;
+  fill: white;
+  stroke: lightgray;
+  stroke-width: 1; }
+
+/*-- Title --*/
+.bb-title {
+  @apply text-18 font-lm fill-blue;
+}
+
+/*-- Tooltip --*/
+.bb-tooltip-container {
+  z-index: 10;
+  @apply text-v-coolgray-2 fill-v-coolgray-2 text-13 leading-15 font-l;
+  position: absolute; }
+
+.bb-tooltip {
+  border-collapse: separate;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px solid #999;
+  background-color: #fff;
+  text-align: left;
+  @apply text-v-coolgray-2 fill-v-coolgray-2 leading-15 text-13 font-l;
+}
+.bb-tooltip th {
+  font-size: 12px;
+  padding: 4px 8px;
+  text-align: left;
+  border-bottom: solid 1px #eee;
+}
+
+.bb-tooltip td {
+  padding: 4px 6px;
+  background-color: #fff;
+}
+
+.bb-tooltip td:first-child {
+  padding-left: 8px;
+}
+
+.bb-tooltip td:last-child {
+  padding-right: 8px;
+}
+
+.bb-tooltip td > span, .bb-tooltip td > svg {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+.bb-tooltip td.value {
+  border-left: 1px solid transparent;
+}
+
+.bb-tooltip .bb-tooltip-title {
+  display: inline-block;
+  @apply font-lb text-14 text-v-gray-3
+}
+
+.bb-tooltip .bb-tooltip-detail table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.bb-tooltip .bb-tooltip-detail .bb-tooltip-name, .bb-tooltip .bb-tooltip-detail .bb-tooltip-value {
+  @apply font-l text-14 text-v-gray-3;
+  padding: 4px 0 3px;
+  text-align: left;
+  font-weight: normal;
+}
+
+.bb-tooltip .bb-tooltip-detail .bb-tooltip-value {
+  padding-left: 5px;
+}
+
+/*-- Area --*/
+.bb-area {
+  stroke-width: 0;
+  opacity: 0.2; }
+
+/*-- Arc --*/
+.bb-chart-arcs-title {
+  dominant-baseline: middle;
+  font-size: 1.3em; }
+
+.bb-chart-arcs .bb-chart-arcs-background {
+  fill: #e0e0e0;
+  stroke: none; }
+
+.bb-chart-arcs .bb-chart-arcs-gauge-unit {
+  fill: #000;
+  font-size: 16px; }
+
+.bb-chart-arcs .bb-chart-arcs-gauge-min, .bb-chart-arcs .bb-chart-arcs-gauge-max {
+  fill: #777; }
+
+.bb-chart-arcs .bb-chart-arcs-title {
+  font-size: 16px !important;
+  fill: #000;
+  font-weight: 600; }
+
+.bb-chart-arcs path.empty {
+  fill: #eaeaea;
+  stroke-width: 0; }
+
+.bb-chart-arc .bb-gauge-value {
+  fill: #000; }
+
+.bb-chart-arc path {
+  stroke: #fff; }
+
+.bb-chart-arc text {
+  fill: #fff;
+  font-size: 13px; }
+
+/*-- Radar --*/
+.bb-chart-radars .bb-levels polygon {
+  fill: none;
+  stroke: #848282;
+  stroke-width: .5px; }
+
+.bb-chart-radars .bb-levels text {
+  fill: #848282; }
+
+.bb-chart-radars .bb-axis line {
+  stroke: #848282;
+  stroke-width: .5px; }
+
+.bb-chart-radars .bb-axis text {
+  font-size: 1.15em;
+  cursor: default; }
+
+.bb-chart-radars .bb-shapes polygon {
+  fill-opacity: .2;
+  stroke-width: 1px;
+}
+
+/*-- Button --*/
+.bb-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.bb-button .bb-zoom-reset {
+  border: solid 1px #ccc;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}

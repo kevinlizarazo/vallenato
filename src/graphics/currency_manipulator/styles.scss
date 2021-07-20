@@ -1,0 +1,596 @@
+.vallenato {
+  background-color: white;
+}
+
+#currency_manipulator {
+  margin: 0 auto;
+  max-width: 1280px;
+  margin-left:20px;
+  margin-right: 20px;
+  z-index:11;
+}
+
+#currency_manipulator_wrapper {
+  column-count: 2;
+  column-gap: 20px;
+}
+
+#currency_manipulator .font-l, #cm-legend .font-l {
+  font-family: 'Larsseit','Arial',serif;
+}
+
+#cm-legend {
+  margin-bottom: 40px;
+  z-index:11;
+}
+
+#cm-legend .legend-wrapper {
+  font-size: 18px;
+  text-align: left;
+  font-family: 'Larsseit','Arial',serif;
+  color: #4b535d;
+  display: block;
+  letter-spacing: normal;
+  line-height: 1.15 !important;
+}
+
+#cm-legend .legend-square {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-right: 15px;
+}
+
+#cm-legend .legend-text {
+  color: #4b535d;
+  display: inline-block;
+  font-family: 'Larsseit','Arial',serif;
+  font-size: 18px;
+  padding-top: 5px;
+  vertical-align: text-bottom;
+  letter-spacing: normal;
+  line-height: 1.4 !important;
+}
+
+.cm-wrapper {
+  break-inside: avoid;
+  max-width: 630px;
+}
+
+.country-data {
+  // padding-top: 25px;
+  border-left: 1px solid #BFBFBF;
+  // padding-left: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.criteria-violated {
+  color: white;
+  background-color: #BD3823;
+  margin: 1px;
+    padding: 3px 0;
+}
+.criteria-violated-double {
+  color: white;
+  background-color: #6F130C;
+  margin: 1px;
+    padding: 3px 0;
+}
+
+.bb-ygrid-line.zero-line line {
+  stroke: #BFBFBF;
+}
+
+.bb-ygrid-line.violation-line line {
+  stroke: #9ea3a5;
+  stroke-dasharray: 6px;
+}
+
+.bb-ygrid-line.violation-line text {
+  fill: #BD3823;
+}
+
+#currency_manipulator .bb-tooltip td > span {
+  display: none;
+}
+
+#currency_manipulator .bb-tooltip, #currency_manipulator .bb-tooltip th {
+  font-size: 14px;
+}
+
+
+.chart-divider {
+  border-top: 1.25px solid #9ea3a5;
+}
+
+#currency_manipulator #dt-dropdown .select_container{
+  margin-left: 0 !important;
+  max-width: 135px;
+}
+
+#currency_manipulator #select1 .select_container{
+  margin-left: 0 !important;
+  max-width: 275px;
+}
+
+#currency_manipulator .select2-selection .select2-selection--single{
+  height: 52px !important;
+  max-height:100px !important;
+
+}
+
+#currency_manipulator .quarter-dropdown .select2-container--default .select2-selection--single{
+  width: 100%;
+  max-width:135px;
+  min-height:52px;
+}
+
+#currency_manipulator .country-dropdown .select2-container--default .select2-selection--single{
+  width: 100%;
+  max-width:275px;
+  min-height:52px;
+}
+
+#currency_manipulator .select2-container--default .select2-selection--single .select2-selection__choice{
+  line-height: 25px;
+  font-size: 19px;
+  height: 25px !important;
+  border: 1px solid #9ea3a5 !important;
+}
+
+#currency_manipulator .select2-container--default.select2-container--focus .select2-selection--single {
+  border: 1px solid #9ea3a5 !important;
+}
+
+.select2-selection__choice__remove{
+  color: white;
+  }
+
+  #currency_manipulator [class^='select2'] {
+    border-radius: 0px !important;
+    cursor: pointer !important;
+  }
+  
+  #currency_manipulator .select2-container .select2-selection--single{
+    height: 53px !important;
+    border: 1px solid #9ea3a5 !important;
+  }
+  
+  #currency_manipulator .select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: 53px !important;
+    font-size: 19px !important;
+    text-indent: 18px !important;
+  }
+  
+  #currency_manipulator .select2-container--default .select2-selection--single .select2-selection__rendered {
+      box-sizing: border-box;
+      list-style: none;
+      margin: 0;
+      width: 90%;
+      min-height: 52px;
+      line-height: 52px;
+      color: #4B535D;
+      font-family: larsseit_regular;
+}
+
+
+#currency_manipulator .placeholder{
+  width: 100%;
+  height: 53px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  line-height: 60px;
+  text-indent: 18px;
+  pointer-events: none;
+  font-size: 19px;
+  color: #4B535D;
+}
+
+#currency_manipulator .quarter-dropdown .placeholder{
+  max-width: 135px;
+}
+
+#currency_manipulator .country-dropdown .placeholder{
+  max-width: 275px;
+}
+
+.select2-selection__placeholder {
+  color: #4B535D !important;
+}
+
+#currency_manipulator .select2-container .select2-selection--single .select2-selection__rendered{
+  padding-left: 0px !important;
+}
+
+#currency_manipulator .dd-orange:after {
+  content: "";
+  cursor: pointer !important;
+  pointer-events: none;
+  position: absolute !important;
+  bottom: 6px !important;
+  right: 9px !important;
+  display: block !important;
+  width: 30px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjQgMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojRjI1RDI3O3N0cm9rZS13aWR0aDoxLjU7c3Ryb2tlLWxpbmVjYXA6c3F1YXJlO3N0cm9rZS1taXRlcmxpbWl0OjEwO30KPC9zdHlsZT4KPGxpbmUgY2xhc3M9InN0MCIgeDE9IjYiIHkxPSIxNS4zIiB4Mj0iMTIiIHkyPSIyMS4zIi8+CjxsaW5lIGNsYXNzPSJzdDAiIHgxPSIxOCIgeTE9IjE1LjMiIHgyPSIxMiIgeTI9IjIxLjMiLz4KPC9zdmc+Cg==')
+}
+
+  #currency_manipulator .select2-container--default .select2-selection--single .select2-selection__choice{
+    font-size: 16px !important;
+  }
+  
+  #currency_manipulator span.select2-container{
+    width:100% !important;
+    margin: 0 auto !important;
+    float: unset !important;
+  }
+
+  #currency_manipulator #dt-dropdown span.select2-container{
+    max-width: 135px;
+  }
+
+  #currency_manipulator #select1 span.select2-container{
+    max-width: 275px;
+  }
+
+  #currency_manipulator .toolbar{
+    width: 100% !important;
+    float: unset !important;
+  }
+
+  #currency_manipulator .quarter-dropdown .toolbar{
+    max-width: 135px;
+  }
+
+  #currency_manipulator .country-dropdown .toolbar{
+    max-width: 275px;
+  }
+
+  .bb-title {
+    fill: #4b535d;
+    font-family: larsseit_regular;
+  }
+
+  #currency_manipulator table.dataTable{
+    color: #4b535d !important;
+    table-layout: fixed;
+    max-width:960px;
+    width:100%;
+    // border-collapse: separate; 
+    // border-spacing: 3px 1px;
+  }
+  
+  #currency_manipulator table.dataTable p{
+    font-family: 'larsseit_regular','Arial', serif !important;
+  }
+  
+  #currency_manipulator table.dataTable td {
+    padding: 0px 0 0 0px !important;
+    height: 26px !important;
+    // line-height: 2 !important;
+    vertical-align: middle !important;
+    font-size: 14px !important;
+    font-family: 'larsseit_regular';
+  }
+
+  #currency_manipulator .fill-grey {
+    background-color: #F2F2F2;
+    margin: 1px;
+    padding: 3px 0;
+  }
+
+  #currency_manipulator .fill-none {
+    margin: 1px;
+    padding: 3px 0;
+  }
+
+  #currency_manipulator .color-violation  {
+    color: #BD3823;
+    font-weight: bold;
+    
+  }
+
+  // #currency_manipulator table.dataTable tr {
+  //  height: 25px;
+  // }
+  
+  #currency_manipulator table.dataTable, table.dataTable th, table.dataTable td {
+      box-sizing: border-box !important;
+  }
+  
+  #currency_manipulator .dataTables_scrollBody img{
+    display:none;
+  }
+
+  #currency_manipulator thead img{
+    border: none !important;
+  }
+  
+  #currency_manipulator table.dataTable thead th {
+      position: relative;
+      background-image: none !important;
+      text-align:left;
+      padding-bottom: 25px;
+      padding-top: 25px;
+      background-color: white;
+      font-size: 14px;
+      line-height: 19px !important;
+      font-weight: 500;
+      padding-left: 0px;
+      vertical-align: bottom;
+  }
+  
+  #currency_manipulator  table.dataTable thead th, table.dataTable thead td{
+    border-bottom: 1.25px solid #9ea3a5;
+  }
+  
+  #currency_manipulator .dataTables_wrapper.no-footer .dataTables_scrollBody{
+    border-bottom: 0px;
+  }
+  
+  #currency_manipulator table.dataTable.no-footer{
+    border-bottom: 0px;
+  }
+  
+  #currency_manipulator table.dataTable thead th.sorting:after,
+  #currency_manipulator table.dataTable thead th.sorting_asc:after,
+  #currency_manipulator table.dataTable thead th.sorting_desc:after {
+      content: "";
+      position: absolute !important;
+      bottom: -8px !important;
+      left: -4px !important;
+      display: block !important;
+      width: 25px;
+      height: 50px;
+  }
+  
+
+  #currency_manipulator table.dataTable thead th.sorting:after {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjQgMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojQzRDNEM0O3N0cm9rZS13aWR0aDoxLjU7c3Ryb2tlLWxpbmVjYXA6c3F1YXJlO3N0cm9rZS1taXRlcmxpbWl0OjEwO30KPC9zdHlsZT4KPGxpbmUgY2xhc3M9InN0MCIgeDE9IjYiIHkxPSIxNS4zIiB4Mj0iMTIiIHkyPSIyMS4zIi8+CjxsaW5lIGNsYXNzPSJzdDAiIHgxPSIxOCIgeTE9IjE1LjMiIHgyPSIxMiIgeTI9IjIxLjMiLz4KPC9zdmc+Cg==');
+  }
+  
+  #currency_manipulator table.dataTable thead th.sorting_asc:after {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjQgMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojRjI1RDI3O3N0cm9rZS13aWR0aDoxLjU7c3Ryb2tlLWxpbmVjYXA6c3F1YXJlO3N0cm9rZS1taXRlcmxpbWl0OjEwO30KPC9zdHlsZT4KPGxpbmUgY2xhc3M9InN0MCIgeDE9IjE4IiB5MT0iMjEuMyIgeDI9IjEyIiB5Mj0iMTUuMyIvPgo8bGluZSBjbGFzcz0ic3QwIiB4MT0iNiIgeTE9IjIxLjMiIHgyPSIxMiIgeTI9IjE1LjMiLz4KPC9zdmc+Cg==')
+    }
+  #currency_manipulator table.dataTable thead th.sorting_desc:after {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjQgMjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojRjI1RDI3O3N0cm9rZS13aWR0aDoxLjU7c3Ryb2tlLWxpbmVjYXA6c3F1YXJlO3N0cm9rZS1taXRlcmxpbWl0OjEwO30KPC9zdHlsZT4KPGxpbmUgY2xhc3M9InN0MCIgeDE9IjYiIHkxPSIxNS4zIiB4Mj0iMTIiIHkyPSIyMS4zIi8+CjxsaW5lIGNsYXNzPSJzdDAiIHgxPSIxOCIgeTE9IjE1LjMiIHgyPSIxMiIgeTI9IjIxLjMiLz4KPC9zdmc+Cg==')
+  }
+
+  
+  
+  #currency_manipulator a.alink{
+  position: relative;
+  }
+  
+  #currency_manipulator .dataTables_filter, .dataTables_info { display: none !important; }
+
+  #currency_manipulator #table_note{
+    width:50%;
+    float:left;
+    padding:5px;
+    color:#4b535d !important;
+    }
+    
+
+    #currency_manipulator .infoIcon{
+      display: inline-block;
+      position: absolute;
+      padding-left: 8px;
+    }
+
+    #currency_manipulator .info{
+      padding: 20px;
+    }
+
+    #currency_manipulator .ttooltip{
+      position: absolute;
+      width: 100%;
+      max-width:220px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+      border: solid 0.5px #9ea4a6;
+      background-color: #ffffff;
+      color:#4d535d;
+      padding:20px;
+      z-index:1000;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    #currency_manipulator .tt_note{
+      padding-top:13px;
+      font-size: 12px;
+      font-style:italic;
+    }
+
+    // #currency_manipulator_bib .bb-axis-x {
+    //   transform: translateY(150px)
+    // }
+
+    // #currency_manipulator_bib .bb-axis-x .tick text {
+    //   transform: translateX(150px)
+    // }
+    #currency_manipulator_bib .bb-axis-y .tick text {
+      transform: translateY(2px)
+    }
+
+    #currency_manipulator #table_note{
+      width:50%;
+      float:right;
+      padding:5px;
+      color:#4b535d !important;
+    }
+
+    .download-wrapper #table_link {
+      width:100%;
+      float:left;
+      text-align: start;
+      display: inline-block;
+      color:#4b535d;
+    }
+
+    .download-wrapper #table_link a{
+      color:#4b535d;
+      text-decoration: underline;
+    }
+
+    .select2-selection__arrow{
+      display:none !important;
+    }
+
+    #data-status-lead{
+      margin-bottom: 25px;
+      line-height: 1.15 !important;
+      font-family: 'Larsseit','Arial',serif;
+      font-size: 18px;
+      letter-spacing: normal;
+    }
+
+    #data-status {
+      line-height: 1.15 !important;
+      font-family: 'Larsseit','Arial',serif;
+      letter-spacing: normal;
+    }
+
+    .chart-legend {
+      font-size: 16px;
+    }
+
+    .download-wrapper {
+      max-width:1280px;
+      background-color: white;
+    }
+
+    .text-gray {
+      color: #4B535D !important;
+    }
+
+    .margin-left {
+      margin-left: 20px;
+    }
+
+    .dataTables_info {
+      display: none !important;
+    }
+
+    @-moz-document url-prefix() {
+      #currency_manipulator .dataTables_scrollBody {
+        position: absolute !important;
+      }
+    }
+    
+    @media (max-width: 1280px) {
+      @-moz-document url-prefix() {
+        #currency_manipulator .dataTables_scrollBody {
+          position: relative !important;
+        }
+      }
+      #currency_manipulator {
+        max-width:1280px; 
+        margin: 0 auto;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .chart-container {
+        transform: translateX(-10px);
+      }
+
+      #currency_manipulator_wrapper{
+        column-count: 1;
+      }
+
+      .cm-wrapper {
+        margin: 0 auto;
+      }
+      .quarter-data {
+        // min-width: 630px;
+      }
+      .country-data {
+        padding-top: 45px !important;
+        padding-left: 0;
+        border-left: 0;
+      }
+      .status-wrapper {
+        margin-top: 32px !important;
+      }
+
+      .download-wrapper {
+        max-width: 630px;
+        margin:0 auto;
+      }
+      
+      .legend {
+        max-width: 630px;
+        margin: 0 auto;
+        margin-bottom: 45px;
+        width: 630px;
+      }
+
+      #currency_manipulator #table_note{
+        width:100%;
+        float:unset;
+      }
+      
+      #currency_manipulator #table_link{
+      width:100%;
+      float:unset;
+      }
+
+      .margin-left {
+        margin-left: 0px;
+      }
+
+    }
+
+    @media (max-width: 660px) {
+      .download-wrapper{
+        // margin-left: 20px;
+      }
+    }
+
+    @media (max-width: 375px) {
+      #currency_table_wrapper {
+        max-width:350px;
+      }
+
+      #data-status-lead{
+        margin-bottom: 22px;
+        line-height: 1.35 !important;
+      }
+
+      #cm-legend .legend-text {
+        line-height: 1.8 !important;
+    }
+
+      .legend {
+        margin-left:0px;
+      }
+
+      #cm-legend .legend-text{
+        font-size: 14px;
+      }
+
+      #currency_manipulator table.dataTable thead th {
+        font-size: 14px;
+      }
+      .country-data {
+        padding-left: 0px;
+      }
+      
+      .download-wrapper {
+        // margin-left: 20px;
+        padding-left: 0px;
+      }
+    }

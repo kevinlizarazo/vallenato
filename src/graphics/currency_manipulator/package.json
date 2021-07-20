@@ -1,0 +1,22 @@
+{
+  "name": "currency_manipulator",
+  "private": true,
+  "version": "1.0.0",
+  "description": "data visualization",
+  "main": "index.js",
+  "scripts": {
+    "bb": "node ../../../utils/bb_cli.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "billboard.js": "^1.8.0",
+    "d3": "^5.9.2",
+    "d3-svg-annotation": "^2.5.0",
+    "datatables": "^1.10.18",
+    "datatables-select": "^1.1.0",
+    "datatables.net-fixedcolumns": "^3.3.0",
+    "jquery": "^3.4.0",
+    "select2": "^4.0.13"
+  }
+}

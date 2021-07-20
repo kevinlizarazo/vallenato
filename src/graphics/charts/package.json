@@ -1,0 +1,17 @@
+{
+  "name": "charts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bb": "node ../../../utils/bb_cli.js"
+  },
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "billboard.js": "^1.8.0",
+    "d3": "^5.9.2",
+    "d3-svg-annotation": "^2.5.0",
+    "jquery": "^3.4.0"
+  }
+}

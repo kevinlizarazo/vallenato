@@ -1,0 +1,12 @@
+{
+  "name": "vaccine_all_candidates_chart",
+  "private": true,
+  "version": "1.0.0",
+  "description": "data visualization",
+  "main": "index.js",
+  "scripts": {
+    "convert": "node ../../../utils/ai2htmlconvert.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

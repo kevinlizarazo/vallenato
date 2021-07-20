@@ -1,0 +1,6 @@
+dist
+node_modules
+.env
+.projectile
+.DS_Store
+src/graphics/.DS_Store

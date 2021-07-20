@@ -1,0 +1,26 @@
+{
+  "name": "currency_manipulator",
+  "private": true,
+  "version": "1.0.0",
+  "description": "data visualization",
+  "main": "index.js",
+  "scripts": {
+    "bb": "node ../../../utils/bb_cli.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "billboard.js": "^1.8.0",
+    "d3": "^5.9.2",
+    "d3-format": "^1.4.4",
+    "d3-geo": "^1.12.0",
+    "d3-geo-projection": "^2.9.0",
+    "d3-svg-legend": "^2.25.6",
+    "jquery": "^3.4.0",
+    "jquery-touchswipe": "^1.6.19",
+    "jquery-ui-touch-punch": "^0.2.3",
+    "select2": "^4.0.13",
+    "topojson-client": "^3.1.0",
+    "webpack-jquery-ui": "^2.0.1"
+  }
+}
