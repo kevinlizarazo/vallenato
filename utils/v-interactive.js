@@ -104,12 +104,12 @@ function scaffold(prj, templ, dep, script) {
       if (prj.gfx_type === 'Chart') {
         console.log('>> RUN BILLBOARD CLI'.red.bold)
         cp.spawn(npmCmd, ['run', 'bb'], { env: process.env, cwd: project_directory, stdio: 'inherit' })
+          .on('close', function(){ 
+            console.log('>> OPEN DEV SERVER'.red.bold)
+            cp.spawn(npmCmd, ['run', 'dev', prj.gfx_name], { env: process.env, cwd: './', stdio: 'inherit' })
+          })
       }
-    },6000);
-    setTimeout( function(){ 
-      console.log('>> OPEN DEV SERVER'.red.bold)
-      cp.spawn(npmCmd, ['run', 'dev', prj.gfx_name], { env: process.env, cwd: './', stdio: 'inherit' })
-    },10000);
+    },4000);
 }
 
 create();
