@@ -1,6 +1,6 @@
 # Vallenato
 
-Vallenato is an interactive and static graphic creation utility for the Council on Foreign Relations. Designers and developers at CFR can quickly stand up a project for prototyping or production by calling one command. While developing a project, Vallenato continuously watches for changes in a project's source code and pushes it to a local server. When ready for production, deployments made to GitHub are then captured by CircleCI and published through Pantheon. For this demo repo, [Netlify](https://netlify.com) hosts and serves it [to the web.](https://vallenato-cfr.netlify.com/currency_manipulator/index.html)
+Vallenato is an interactive and static graphic creation utility for the Council on Foreign Relations. Designers and developers at CFR can quickly stand up a project for prototyping or production by calling one command. While developing a project, Vallenato continuously watches for changes in a project's source code and pushes it to a local server. When ready for production, deployments made to GitHub are then captured by CircleCI and published through Pantheon. [Netlify](https://netlify.com) hosts and serves it [to the web.](https://vallenato-media.cfr.org/vallenato/interactive/global_growth_tracker/index.html)
 
 This demo repo contains projects currently live at CFR.org.
 
